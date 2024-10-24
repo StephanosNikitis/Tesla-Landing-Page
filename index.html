@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page for Tesla</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="https://en.wikipedia.org/wiki/Tesla,_Inc." target="_blank"><img src="https://www.logo.wine/a/logo/Tesla%2C_Inc./Tesla%2C_Inc.-Logomark-White-Dark-Background-Logo.wine.svg" alt="Tesla" width="60"/></a></div>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Discover</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Shop</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Sign In</a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i> Help</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Discover</a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping"></i> Shop</a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-user"></i> Sign In</a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-message"></i> Help</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <section id="fullpage">
+        <section class="section hero">
+            <div class="section__content">
+                <h1 class="section__content__title">ROBOTAXI</h1>
+            </div>
+
+            <div class="section__action__container">
+                <a class="section__action__btn action__btn__primary" href="#">Learn More</a>
+            </div>
+        </section>
+        <section class="section one">
+            <div class="section__content">
+                <h1 class="section__content__title">Model x</h1>
+                <h2 class="section__content__subtitle">
+                    order online for Touchless delivery
+                </h2>
+            </div>
+
+            <div class="section__action__container">
+                <a class="section__action__btn action__btn__primary" href="#"
+                    >Order Now</a
+                >
+                <a class="section__action__btn action__btn__secondary" href="#"
+                    >Demo Drive</a
+                >
+            </div>
+        </section>
+        <section class="section two">
+            <div class="section__content">
+                <h1 class="section__content__title">Model y</h1>
+                <h2 class="section__content__subtitle">
+                    order online for Touchless delivery
+                </h2>
+            </div>
+
+            <div class="section__action__container">
+                <a class="section__action__btn action__btn__primary" href="#"
+                    >Order Now</a
+                >
+                <a class="section__action__btn action__btn__secondary" href="#"
+                    >Demo Drive</a
+                >
+            </div>
+        </section>
+        <section class="section three">
+            <div class="section__content">
+                <h1 class="section__content__title">solar roof</h1>
+                <h2 class="section__content__subtitle">
+                    Produce Clean Energy From Your Roof
+                </h2>
+            </div>
+
+            <div class="section__action__container">
+                <a class="section__action__btn action__btn__primary" href="#">Order now</a>
+                <a class="section__action__btn action__btn__secondary" href="#"
+                    >Learn more</a
+                >
+            </div>
+        </section>
+        <section class="section four">
+            <div class="section__content">
+                <h1 class="section__content__title">Accessories</h1>
+            </div>
+
+            <div class="section__action__container">
+                <a class="section__action__btn action__btn__primary" href="#">Shop now</a>
+            </div>
+
+            <footer class="footer">
+                <ul>
+                    <li><a href="#">Tesla © 2024</a></li>
+                    <li><a href="#"> Privacy &amp; Legal </a></li>
+                    <li><a href="#"> Vehicle Recalls </a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Engage</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </footer>
+        </section>
+    </section>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+             const sidebar = document.querySelector('.sidebar')
+             sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

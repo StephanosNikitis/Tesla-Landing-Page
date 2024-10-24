@@ -1,0 +1,222 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: rgba(232,33,39,1);
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 15px 30px;
+}
+.navdiv{
+    display: flex;
+     align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+.logo img{
+    margin-right: 10px;
+    width: 60px;
+}
+ul{
+    display:flex;
+     align-items: center;
+}
+li{
+    list-style: none;
+     margin-left: 25px;
+}
+li a{
+    color: white;
+     font-size: 18px;
+      font-weight: bold;
+}
+li a:hover{
+    color: black;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(232,33,39);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+html{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+#fullpage.no-scroll {
+	overflow-y: hidden;
+	max-height: 100vh;
+}
+
+.section {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.section.hero {
+    background-image: url(https://media.admiddleeast.com/photos/6712aa8131e8d595df5b1bf9/1:1/w_1080,h_1080,c_limit/tesla-robotaxi-cybercab.jpg);
+    color: rgba(222,184,135);
+    font-weight: bold;
+}
+.section.one {
+	background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop-US.png);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.section.two {
+	background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-US-v2.png);
+    margin: 10px;
+    border-radius: 20px;
+    color: cornflowerblue;
+}
+
+.section.three {
+	background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-HZ3AfPpMw5fGfsjVmy6D4N3UUnAp_AOaEAZaUUVfCtu1E0iWvNdvRAcvwAtT0s_8eXPm9-qd-yhNIbdBZjNazqfeIlMWka0Vcs0mAGS27ltdwWLFUtOflpYMovXP9-ucGPU3vlIyCMo/s640/rooftop.jpg);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.section.four {
+	background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-US.png);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.section__content {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--primary-color);
+}
+
+.section__content__title {
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.section__content__subtitle {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.section__content__subtitle a {
+	color: inherit;
+}
+
+.section__action__container {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.section__action__btn {
+	font-size: 1.5rem;
+	font-weight: 500;
+	border-radius: 2rem;
+    margin: 0 10px;
+    padding: 0.75rem 3.5rem;
+	margin-bottom: 1rem;
+    min-width: 160px;
+	text-transform: capitalize;
+    text-align: center;
+}
+
+.action__btn__primary {
+	background: rgba(23, 26, 42, 0.8);
+	color: white;
+}
+
+.action__btn__secondary {
+	background: rgba(255, 255, 255, 0.65);
+	color: black;
+}
+.footer {
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	width: 100%;
+    background: rgba(23, 26, 42, 0.8);
+    color: white;
+}
+
+.footer ul {
+	width: 80%;
+	margin: 2rem auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.footer ul li {
+	margin: 0 1rem;
+	margin-top: 1rem;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.footer ul li a {
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+}
+@media only screen and (max-width: 800px){
+    .logo img{
+        width: 50px;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }    
+}
+@media(max-width: 400px){
+    .footer ul li a{
+        font-size: 5px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+}
